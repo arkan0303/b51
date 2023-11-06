@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(255, 131, 68);
+  background: radial-gradient(
+    circle,
+    rgba(255, 131, 68, 1) 0%,
+    rgba(180, 193, 187, 1) 100%
+  );
+  color: black;
+}
+.container {
+  width: 500px;
+  margin: 25px auto;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+}
+/* .container :hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: black;
+  cursor: pointer;
+} */
+.container h1,
+p {
+  padding: 1rem;
+  text-align: justify;
+}
+.btn-cv {
+  display: flex;
+}
+.cv {
+  padding: 1rem 0;
+}
+.cv a {
+  text-decoration: none;
+  /* padding: 10px 15px; */
+  color: black;
+  font-weight: bold;
+}
+.cv a:hover {
+  color: blue;
+}
+.btn {
+  padding: 1rem;
+}
+.btn a {
+  text-decoration: none;
+  border: none;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.btn a:hover {
+  color: blue;
+}
+.image img {
+  width: 100%;
+}
+.icons {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  /* border: 1px solid black; */
+}
+.icons a {
+  color: black;
+}
+.icons i {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.icons i:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: black;
+  font-weight: bold;
+}
+.image {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 8px;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+}
+.image img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: black;
+  cursor: pointer;
+}
+.image img {
+  border-radius: 10px;
+}
+.image h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.image h6 {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+}
