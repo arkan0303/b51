@@ -28,8 +28,9 @@ textarea {
   background-color: rgba(255, 255, 255, 0.616);
   border: none;
   border-radius: 5px;
-  height: 35px;
-  /* padding: 10px; */
+  /* height: 35px; */
+  box-sizing: content-box;
+  padding: 10px;
 }
 .contact-main label {
   font-weight: bold;
@@ -37,6 +38,15 @@ textarea {
 }
 .contact-main > div {
   margin: 10px 0;
+}
+.btn-cotact {
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 0 10px;
+  background-color: lightgray;
+}
+.btn-cotact:hover {
+  background-color: rgb(0, 0, 255);
 }
 .btn-cotact button {
   width: 100%;
@@ -47,7 +57,7 @@ textarea {
   background-color: lightgray;
 }
 .btn-cotact button:hover {
-  background-color: rgba(0, 0, 255, 0.498);
+  background-color: rgba(0, 0, 255, 0.301);
   color: white;
   font-weight: bold;
 }
