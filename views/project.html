@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Project</title>
+    <link rel="stylesheet" href="/src/assets/css/index.css" />
+    <link rel="stylesheet" href="/src/assets/css/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navigation">
+        <div class="nav-left">
+          <img src="/src/assets/image/logo.png" alt="" />
+          <div class="link">
+            <a href="/views/index.html" class="active-link">Home</a>
+            <a href="/views/project.html">My Project</a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="/views/contact.html">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- form -->
+    <hr />
+    <form class="" onsubmit="addData(event)">
+      <div class="judul-form"><h4>ADD MY PROJECT</h4></div>
+      <div class="pembungkus-project">
+        <div class="input-1">
+          <label for="title" class="form-label">Project Name</label>
+          <input type="text" class="form-control" name="title" id="title" />
+        </div>
+        <div class="date">
+          <div class="start-date">
+            <label for="start-date" class="form-label">Start Date</label>
+            <input
+              type="date"
+              class="form-control"
+              name="start-date"
+              id="start-date"
+            />
+          </div>
+          <div class="end-date">
+            <label for="end-date" class="form-label">End Date</label>
+            <input
+              type="date"
+              class="form-control"
+              name="end-date"
+              id="end-date"
+            />
+          </div>
+        </div>
+        <div class="input-1">
+          <label for="Description" class="form-label">Description</label>
+          <textarea
+            class=""
+            name="Description"
+            id="Description"
+            style="resize: none; height: 100px"
+          ></textarea>
+        </div>
+        <div class="pembungkus-tekno">
+          <label>Technologies</label>
+          <div>
+            <input
+              type="checkbox"
+              name="Technologies"
+              value="node-js"
+              id="node"
+            />
+            <label class="" for="node">Node Js</label>
+            <input
+              class="java"
+              type="checkbox"
+              name="Technologies"
+              value="java"
+              id="java"
+            />
+            <label class="" for="java">Java</label>
+          </div>
+          <div>
+            <input
+              class=""
+              type="checkbox"
+              name="Technologies"
+              value="react-js"
+              id="react"
+            />
+            <label class="" for="react">React Js</label>
+            <input
+              class="golang"
+              type="checkbox"
+              name="Technologies"
+              value="golang"
+              id="golang"
+            />
+            <label class="" for="golang">Golang</label>
+          </div>
+        </div>
+        <div class="upload">
+          <label for="input-image">Upload Image</label>
+          <div class="input-image-group">
+            <label for="input-image">
+              <h6>Choose</h6>
+              <img src="/src/assets/image/file.png" alt="" />
+            </label>
+            <input type="file" id="input-image" hidden />
+          </div>
+        </div>
+        <div class="klik">
+          <button type="submit">Post Project</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="hr-">
+      <h2>MY PROJECT</h2>
+    </div>
+    <div id="contents" class="kelas1">
+      <div class="kelas2">
+        <div class="kelas3">
+          <img src="/src/assets/image/coding.gif" alt="" />
+        </div>
+        <div class="elemen">
+          <a href="/views/detai.html">Teknologi Terbaru 2023</a>
+          <div class="kelas4">
+            <p>5 September 2023 12:30 WIB | Arkanul Adelis</p>
+          </div>
+
+          <p class="lorem">
+            teknologi terbaru ini akan buming pada tahun 2024 nanti , jadi
+            persiapkan diri kalian wahai programmer
+          </p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-golang"></i>
+          <i class="fa-brands fa-java"></i>
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-node-js"></i>
+        </div>
+
+        <div class="kelas5">
+          <div class="delete">
+            <button>Delete</button>
+          </div>
+          <div class="edit">
+            <button>Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/assets/js/project.js"></script>
+  </body>
+</html>

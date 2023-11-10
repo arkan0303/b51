@@ -1,0 +1,65 @@
+.judul-detail {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #ebf3e8;
+}
+.judul-detail h2 {
+  margin-top: 2rem;
+}
+.detail {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  /* width: 100%; */
+  padding: 1rem 2rem;
+  background-color: #ebf3e8;
+  /* border: 1px solid black; */
+}
+
+.detail-left img {
+  width: 500px;
+}
+.detail-right {
+  margin-left: 100px;
+  padding: 1rem 0;
+}
+.duration i {
+  display: flex;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.duration p {
+  font-weight: 300;
+}
+.tecno {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.tecno-left i {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.tecno-left p {
+  margin-left: 9px;
+  font-weight: 300;
+}
+.tecno-right p {
+  margin-left: 9px;
+  font-weight: 300;
+}
+.tecno-right i {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+.tecno img {
+  width: 40px;
+  margin: 0 3rem;
+}
+.detail-p p {
+  padding: 0 2rem;
+  text-align: justify;
+  background-color: #ebf3e8;
+}
