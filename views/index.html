@@ -27,9 +27,19 @@
         </div>
         <div class="nav-right">
           <a href="/views/contact.html">Contact Me</a>
+          <div class="burger" onclick="bars()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="items-hamburger" id="items-bars">
+      <a href="/views/index.html">Home</a>
+      <a href="/views/project.html">My Project</a>
+      <a href="/views/contact.html">Contact Me</a>
+    </div>
     <!-- navbar end -->
     <!-- content -->
     <hr>
@@ -40,7 +50,7 @@
         <div class="content-left">
           <h1>Hi Welcome to my hut</h1>
           <p>
-            Hallo perkenalkan nama saya Arkanul Adelis Dari Cicurug Sukabumi Jawa
+            Hallo Perkenalkan nama saya Arkanul Adelis Dari Cicurug Sukabumi Jawa
             Barat. Terkait saya mengikuti bootcamp di dumbways ini semoga bisa jadi
             jembatan buat saya,buat menjadi Fullstack Developer. Lorem ipsum
             dolor sit,amet consectetur adipisicing elit. Totam harum, maxime cum
@@ -59,7 +69,7 @@
           </div>
           <div class="icons">
             <a href="https://www.tiktok.com/@arkanul0303?_t=8h8Th6lihU8&_r=1"
-              ><i class="fa-brands fa-tiktok fa-sm"></i
+              ><i class="fa-brands fa-tiktok "></i
             ></a>
             <a href="https://instagram.com/arkan_al_sarawi?igshid=YWYwM2I1ZDdmOQ=="
               ><i class="fa-brands fa-instagram"></i
@@ -84,6 +94,7 @@
     </div>
     <!-- content end -->
   </body>
+  <script src="/src/assets/js/nav.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

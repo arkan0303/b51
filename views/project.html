@@ -26,9 +26,19 @@
         </div>
         <div class="nav-right">
           <a href="/views/contact.html">Contact Me</a>
+          <div class="burger" onclick="bars()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="items-hamburger" id="items-bars">
+      <a href="/views/index.html">Home</a>
+      <a href="/views/project.html">My Project</a>
+      <a href="/views/contact.html">Contact Me</a>
+    </div>
     <!-- form -->
     <hr />
     <form class="" onsubmit="addData(event)">
@@ -157,6 +167,7 @@
         </div>
       </div>
     </div>
+    <script src="/src/assets/js/nav.js"></script>
     <script src="/src/assets/js/project.js"></script>
   </body>
 </html>

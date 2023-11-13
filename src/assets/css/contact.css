@@ -61,3 +61,52 @@ textarea {
   color: white;
   font-weight: bold;
 }
+
+/* responsivee mobile */
+@media only screen and (max-width: 500px) {
+  .contact-main {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+/* responsive tablet */
+@media only screen and (max-width: 834px) {
+  .contact-main {
+    width: 90%;
+    padding: 0;
+  }
+  .contact-main input,
+  select,
+  textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    box-sizing: content-box;
+    padding: 0;
+  }
+  .btn-cotact {
+    width: 100%;
+    padding: 0;
+    background-color: lightgray;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .contact-main {
+    width: 90%;
+    padding: 0;
+  }
+  .contact-main input,
+  select,
+  textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    box-sizing: content-box;
+    padding: 0;
+  }
+}
