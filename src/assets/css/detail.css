@@ -63,3 +63,32 @@
   text-align: justify;
   background-color: #ebf3e8;
 }
+@media only screen and (max-width: 500px) {
+  .detail-left img {
+    width: 150px;
+    height: 200px;
+  }
+  .detail-right {
+    margin-left: 10px;
+    padding: 5px 0;
+  }
+  .duration i {
+    display: flex;
+    padding: 5px 0;
+    gap: 5px;
+  }
+  .duration p {
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .tecno-left p {
+    margin-left: 9px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .tecno-right p {
+    margin-left: 9px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+}
