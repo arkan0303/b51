@@ -2,18 +2,15 @@
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
-  background-color: #ebf3e8;
 }
 .judul-detail h2 {
   margin-top: 2rem;
+  color: #fffffe;
 }
 .detail {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  /* width: 100%; */
   padding: 1rem 2rem;
-  background-color: #ebf3e8;
-  /* border: 1px solid black; */
 }
 
 .detail-left img {
@@ -22,6 +19,10 @@
 .detail-right {
   margin-left: 100px;
   padding: 1rem 0;
+}
+.detail-right h4,
+i {
+  color: #fffffe;
 }
 .duration i {
   display: flex;
@@ -38,7 +39,7 @@
 }
 .tecno-left i {
   display: flex;
-  color: black;
+  color: #fffffe;
   font-weight: bold;
 }
 .tecno-left p {
@@ -51,7 +52,7 @@
 }
 .tecno-right i {
   display: flex;
-  color: black;
+  color: #fffffe;
   font-weight: bold;
 }
 .tecno img {
@@ -61,7 +62,6 @@
 .detail-p p {
   padding: 0 2rem;
   text-align: justify;
-  background-color: #ebf3e8;
 }
 @media only screen and (max-width: 500px) {
   .detail-left img {

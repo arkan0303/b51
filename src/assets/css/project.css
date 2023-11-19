@@ -5,7 +5,7 @@ form {
   /* width: 100%; */
   padding: 1rem;
   margin: 0 auto;
-  background-color: #b2c8ba;
+  /* background-color: #b2c8ba; */
   box-shadow: 0px 5px 5px rgba(178, 200, 186, 0.5);
   height: 80vh;
 }
@@ -13,6 +13,7 @@ form {
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  color: #e8e4e6;
 }
 .pembungkus-project {
   width: 50%;
@@ -44,6 +45,9 @@ form {
   border: none;
   border-radius: 5px;
 }
+.date label {
+  color: #e8e4e6;
+}
 .input-1 input,
 textarea {
   width: 100%;
@@ -56,6 +60,9 @@ textarea {
 .input-1 div,
 textarea {
   margin: 10px 0;
+}
+.input-1 label {
+  color: #e8e4e6;
 }
 .pembungkus-tekno {
   margin-top: 10px;
@@ -70,11 +77,17 @@ textarea {
 input {
   margin-top: 5px;
 }
+.pembungkus-tekno label {
+  color: #e8e4e6;
+}
 .pembungkus-tekno input {
   background-color: rgba(255, 255, 255, 0.616);
 }
 .upload {
   margin-top: 10px;
+}
+.upload label {
+  color: #e8e4e6;
 }
 .input-image-group {
   width: 100%;
@@ -101,22 +114,21 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: black;
 }
 .klik button {
-  background-color: black;
-  color: white;
+  background-color: #f9bc60;
+  color: black;
+  font-weight: bold;
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
   float: right;
 }
-.klik button:hover {
-  background-color: brown;
-}
 .hr- {
   display: flex;
   justify-content: center;
-  background-color: #ebf3e8;
+  background-color: #abd1c6;
   display: flex;
   justify-content: center;
 }
@@ -126,7 +138,7 @@ input {
 }
 .kelas1 {
   /* width: 100%; */
-  background-color: #ebf3e8;
+  background-color: #abd1c6;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -143,11 +155,11 @@ input {
   border: 1px solid black;
   border-radius: 7px;
   padding: 10px;
-  background-color: #b2c8ba;
+  background-color: #004643;
 }
 .elemen a {
   text-decoration: none;
-  color: black;
+  color: #fffffe;
   font-weight: bold;
   font-size: 20px;
 }
@@ -155,6 +167,7 @@ input {
   display: flex;
   text-align: justify;
   font-size: 15px;
+  color: #abd1c6;
 }
 .kelas3 img {
   width: 100%;
@@ -166,6 +179,7 @@ input {
   padding: 0;
   margin-top: 5px;
   margin-bottom: 7px;
+  color: #abd1c6;
 }
 .icon {
   margin-bottom: 5px;
@@ -173,6 +187,7 @@ input {
 .icon i {
   width: 30px;
   height: auto;
+  color: #abd1c6;
 }
 .kelas5 {
   width: 100%;
@@ -187,8 +202,9 @@ input {
   display: flex;
   justify-content: center;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: #f9bc60;
+  color: #001e1d;
+  font-weight: bold;
   padding: 3px 35%;
 }
 .edit {
@@ -198,8 +214,9 @@ input {
   display: flex;
   justify-content: center;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: #f9bc60;
+  color: #001e1d;
+  font-weight: bold;
   padding: 3px 42%;
 }
 
@@ -239,7 +256,7 @@ input {
     border: 1px solid black;
     border-radius: 7px;
     padding: 10px;
-    background-color: #b2c8ba;
+    background-color: #004643;
   }
 }
 @media only screen and (max-width: 412px) {
@@ -277,7 +294,7 @@ input {
     border: 1px solid black;
     border-radius: 7px;
     padding: 10px;
-    background-color: #b2c8ba;
+    background-color: #004643;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -338,6 +355,6 @@ input {
     border: 1px solid black;
     border-radius: 7px;
     padding: 10px;
-    background-color: #b2c8ba;
+    background-color: #004643;
   }
 }
