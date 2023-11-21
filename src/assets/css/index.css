@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +26,6 @@ nav {
 .navigation {
   display: flex;
   justify-content: space-between;
-  /* background-color: #b2c8ba; */
   padding: 0.5rem;
 }
 .nav-left,
@@ -38,9 +37,6 @@ nav {
   width: 50px;
   margin-left: 1.5rem;
 }
-/* .link {
-  margin-left: 1rem;
-} */
 .link a {
   margin-left: 2rem;
   text-decoration: none;
@@ -75,15 +71,32 @@ nav {
   transform: scale(1.08);
   font-weight: bold;
   color: black;
+} */
+.nav-item a:hover {
+  border-bottom: 1px solid #f9bc60;
+}
+.active {
+  color: #f9bc60;
+}
+.tes a:hover i {
+  transform: translateY(-10px);
+}
+.icon i:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  font-weight: bold;
+  color: black;
+}
+.btn-hover a:active {
+  background-color: aliceblue;
 }
 /* css nav end */
-.content {
+/* .content {
   width: 100%;
   height: 78vh;
   overflow-x: hidden;
-  /* border: 1px solid black; */
+
   padding: 2rem 0;
-  /* background-color: #b2c8ba; */
 }
 .container {
   width: 50%;
@@ -171,10 +184,10 @@ p {
   margin-top: 4px;
   font-weight: 400;
   font-size: 15px;
-}
+} */
 
 /* items hamburger */
-.burger div {
+/* .burger div {
   width: 25px;
   height: 2px;
   background-color: black;
@@ -200,7 +213,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #9bbec8; */
   color: black;
   font-weight: bold;
 }
@@ -208,10 +220,10 @@ p {
   background-color: rgba(163, 3, 3, 0.648);
 }
 .items-hamburger a:hover {
-  background-color: #f9bc60;
-}
+  background-color: #f9bc60; */
+
 /* responsive tablet */
-@media only screen and (max-width: 834px) {
+/* @media only screen and (max-width: 834px) {
   .content {
     width: 100%;
     height: 100vh;
@@ -238,10 +250,10 @@ p {
     margin: 100px auto;
     display: flex;
   }
-}
+} */
 
 /* responsive navbar mobile */
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   nav {
     width: 100%;
   }
@@ -275,9 +287,9 @@ p {
   }
   .toggle-burger .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-  }
-  /* content */
-  .content {
+  } */
+/* content */
+/* .content {
     padding: 0;
     height: 100vh;
     background-color: #004643;
@@ -301,7 +313,6 @@ p {
     margin-top: 2.8rem;
     margin-bottom: 1.7rem;
     gap: 1rem;
-    /* border: 1px solid black; */
   }
   .icons i {
     font-size: 30px;
@@ -315,7 +326,6 @@ p {
     color: black;
   }
   .content-right {
-    /* border: 1px solid black; */
     margin: 0 auto;
   }
   .name {
@@ -325,4 +335,4 @@ p {
     font-size: 10px;
     margin-bottom: 10px;
   }
-}
+} */

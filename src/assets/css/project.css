@@ -1,11 +1,23 @@
-* {
+/* @media only screen and (max-width: 500px) {
+  .rupa {
+    max-width: 300%;
+    width: 500%;
+    margin: 0;
+    background-color: aqua !important;
+  }
+  .saha {
+    width: 90%;
+  }
+} */
+
+/* {
   font-family: Arial, Helvetica, sans-serif;
 }
 form {
-  /* width: 100%; */
+
   padding: 1rem;
   margin: 0 auto;
-  /* background-color: #b2c8ba; */
+
   box-shadow: 0px 5px 5px rgba(178, 200, 186, 0.5);
   height: 80vh;
 }
@@ -20,7 +32,7 @@ form {
   margin: 0 auto;
   padding: 10px 9px;
   margin-right: auto;
-  /* border: 1px solid black; */
+
 }
 .date {
   width: 100%;
@@ -31,11 +43,11 @@ form {
 }
 .start-date {
   flex: 50%;
-  /* border: 1px solid black; */
+
 }
 .end-date {
   flex: 50%;
-  /* border: 1px solid black; */
+
 }
 .date input {
   width: 100%;
@@ -137,14 +149,14 @@ input {
   margin-bottom: 10px;
 }
 .kelas1 {
-  /* width: 100%; */
+
   background-color: #abd1c6;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem;
-  /* border: 1px solid black; */
+
 }
 .kelas2 {
   width: 21%;
@@ -219,8 +231,12 @@ input {
   font-weight: bold;
   padding: 3px 42%;
 }
+.active {
+  color: red;
+}
 
-/* responsiv mobile */
+
+
 @media only screen and (max-width: 500px) {
   .judul-form {
     margin-bottom: 2rem;
@@ -246,7 +262,7 @@ input {
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    /* border: 1px solid black; */
+
   }
   .kelas2 {
     width: 90%;
@@ -266,7 +282,7 @@ input {
   .pembungkus-project {
     width: 80%;
     margin: 0 auto;
-    /* padding: 0 1rem; */
+    
   }
   .klik button {
     background-color: black;
@@ -284,7 +300,7 @@ input {
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    /* border: 1px solid black; */
+   
   }
   .kelas2 {
     width: 90%;
@@ -299,7 +315,7 @@ input {
 }
 @media only screen and (max-width: 320px) {
   form {
-    /* width: 100%; */
+  
     padding: 1rem;
     margin: 0 auto;
     background-color: #b2c8ba;
@@ -323,11 +339,11 @@ input {
   }
   .start-date {
     flex: 25%;
-    /* border: 1px solid black; */
+
   }
   .end-date {
     flex: 25%;
-    /* border: 1px solid black; */
+
   }
   .klik button {
     background-color: black;
@@ -345,7 +361,6 @@ input {
     justify-content: center;
     flex-direction: column;
     padding: 5px;
-    /* border: 1px solid black; */
   }
   .kelas2 {
     width: 70%;
@@ -357,4 +372,4 @@ input {
     padding: 10px;
     background-color: #004643;
   }
-}
+}  */
