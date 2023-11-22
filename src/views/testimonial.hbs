@@ -1,11 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonial</title>
-    <link rel="stylesheet" href="/src/assets/css/index.css" />
-    <link rel="stylesheet" href="/src/assets/css/testimonial.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,18 +17,19 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/testimonial.css" />
   </head>
-  <body font-family: Arial, Helvetica, sans-serif;>
+  <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #004643">
+    <nav style="background-color: #004643" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="/views/index.html"
-          ><img
-            src="/src/assets/image/logo.png"
+        <a class="navbar-brand ms-3" href="/"><img
+            src="/image/logo.png"
             style="width: 40px; height: 40px"
             alt=""
             srcset=""
-        /></a>
+          /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,62 +47,62 @@
               <a
                 class="nav-link text-light fw-bold ms-2"
                 aria-current="page"
-                href="/views/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light fw-bold ms-2 active"
-                href="/views/project.html"
-                style="color: #f9bc60"
-                >Add Project</a
-              >
+                href="/"
+              >Home</a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-light fw-bold ms-2"
-                href="/views/testimonial.html"
-                >Testimonial</a
-              >
+                aria-current="true"
+                href="/add-project"
+                style="color: #f9bc60"
+              >Add Project</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fw-bold ms-2"
+                href="/testimonial"
+              >Testimonial</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <div class="d-flex" role="search">
             <button
               class="border border-0 me-4 rounded"
               type="submit"
               style="background-color: #f9bc60"
             >
-              <a
-                class="nav-link text-dark px-2 fw-bold"
-                href="/views/contact.html"
-                >Contact Me</a
-              >
+              <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
+                Me</a>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="container-testi" style="margin-top: 1px">
+    <div class="container-testi" style="margin-top: 1px ">
       <h1>My Testimonials</h1>
       <div class="container-rating">
         <h2>Rating By Star</h2>
         <div class="rating">
           <button class="rating-btn" onclick="allTestimonials()">All</button>
           <button class="rating-btn" onclick="cardFiltered(1)">
-            1 <i class="fa-solid fa-star"></i>
+            1
+            <i class="fa-solid fa-star"></i>
           </button>
           <button class="rating-btn" onclick="cardFiltered(2)">
-            2 <i class="fa-solid fa-star"></i>
+            2
+            <i class="fa-solid fa-star"></i>
           </button>
           <button class="rating-btn" onclick="cardFiltered(3)">
-            3 <i class="fa-solid fa-star"></i>
+            3
+            <i class="fa-solid fa-star"></i>
           </button>
           <button class="rating-btn" onclick="cardFiltered(4)">
-            4 <i class="fa-solid fa-star"></i>
+            4
+            <i class="fa-solid fa-star"></i>
           </button>
           <button class="rating-btn" onclick="cardFiltered(5)">
-            5 <i class="fa-solid fa-star"></i>
+            5
+            <i class="fa-solid fa-star"></i>
           </button>
         </div>
       </div>
@@ -120,7 +118,7 @@
   ></script>
   <script src="/src/assets/js/nav.js"></script>
   <script src="/src/assets/js/testimonial.js"></script>
-  <script src="/src/assets/js/tesjson.js"></script>
+  <script src="../js/tesjson.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

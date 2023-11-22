@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,19 +17,18 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/assets/css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
-  <body font-family: Arial, Helvetica, sans-serif;>
+  <body>
     <!-- navbar -->
     <nav style="background-color: #004643" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="/views/index.html"
-          ><img
-            src="/src/assets/image/logo.png"
+        <a class="navbar-brand ms-3" href="/"><img
+            src="/image/logo.png"
             style="width: 40px; height: 40px"
             alt=""
             srcset=""
-        /></a>
+          /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,57 +44,43 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link text-light fw-bold ms-2 active"
-                style="color: #f9bc60"
+                class="nav-link text-light fw-bold ms-2"
                 aria-current="page"
-                href="#"
-                >Home</a
-              >
+                href="/"
+              >Home</a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-light fw-bold ms-2"
-                href="/views/project.html"
-                >Add Project</a
-              >
+                aria-current="true"
+                href="/add-project"
+                style="color: #f9bc60"
+              >Add Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold ms-2" href="#"
-                >Testimonial</a
-              >
+              <a
+                class="nav-link text-light fw-bold ms-2"
+                href="/testimonial"
+              >Testimonial</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <div class="d-flex" role="search">
             <button
               class="border border-0 me-4 rounded"
               type="submit"
               style="background-color: #f9bc60"
             >
-              <a
-                class="nav-link text-dark px-2 fw-bold"
-                href="/views/contact.html"
-                >Contact Me</a
-              >
+              <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
+                Me</a>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- <hr class="border" /> -->
     <!-- navbar end -->
     <!-- card -->
-    <div
-      style="background-color: #004643; height: 100vh; margin-top: 1px"
-      class="w-100 pt-5"
-    >
-      <div
-        class="card mb-3 mx-auto p-3 pt-5"
-        style="
-          max-width: 50%;
-          background-color: #004643;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.605);
-        "
-      >
+    <div style="background-color: #004643; margin-top: 1px " class="content">
+      <div class="card mx-auto p-3 pt-5">
         <div class="row g-0">
           <div class="col-md-8">
             <div class="card-body">
@@ -118,14 +102,14 @@
                   <a
                     href="https://api.whatsapp.com/send?phone=+6285795715960"
                     class="py-0 px-2 fw-bold nav-link"
-                    >Contact Me</a
-                  >
+                  >Contact Me</a>
                 </div>
                 <div class="tes align-top ms-2">
                   <a
                     class="nav-link text-light fw-bold icon-link icon-link-hove"
                     href="https://drive.google.com/file/d/1IIRpj6EX8y5ufzaCW4c_EqN8LwURfcfF/view?usp=drivesdk"
-                    >Download CV <i class="fa-solid fa-download"></i>
+                  >Download CV
+                    <i class="fa-solid fa-download"></i>
                   </a>
                 </div>
               </div>
@@ -133,29 +117,25 @@
                 <a
                   class="fs-4 text-light"
                   href="https://www.tiktok.com/@arkanul0303?_t=8h8Th6lihU8&_r=1"
-                  ><i class="fa-brands fa-tiktok"></i
-                ></a>
+                ><i class="fa-brands fa-tiktok"></i></a>
                 <a
                   class="fs-4 text-light ms-3"
                   href="https://instagram.com/arkan_al_sarawi?igshid=YWYwM2I1ZDdmOQ=="
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
+                ><i class="fa-brands fa-instagram"></i></a>
                 <a
                   class="fs-4 text-light ms-3"
                   href="https://www.facebook.com/arkanal.sarrawwi"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
+                ><i class="fa-brands fa-facebook-f"></i></a>
                 <a
                   class="fs-4 text-light ms-3"
                   href="https://api.whatsapp.com/send?phone=+6285795715960"
-                  ><i class="fa-brands fa-whatsapp"></i
-                ></a>
+                ><i class="fa-brands fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4 bg-body-secondary rounded">
             <img
-              src="/src/assets/image/profile.jpg"
+              src="/image/profile.jpg"
               class="img-fluid rounded p-3"
               alt="..."
             />
@@ -172,6 +152,7 @@
       </div>
     </div>
     <!-- card end -->
+
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

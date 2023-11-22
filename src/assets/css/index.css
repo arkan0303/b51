@@ -90,6 +90,33 @@ nav {
 .btn-hover a:active {
   background-color: aliceblue;
 }
+.card {
+  width: 50%;
+  background-color: #004643;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.605);
+}
+.content {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  height: 100%;
+}
+.card-form {
+  width: 23%;
+  max-height: 21%;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+  .content {
+    padding-top: 5px;
+    padding-bottom: 5rem;
+  }
+  .card-form {
+    width: 90%;
+  }
+}
 /* css nav end */
 /* .content {
   width: 100%;

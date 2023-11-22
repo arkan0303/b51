@@ -4,33 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Project</title>
-    <link rel="stylesheet" href="/src/assets/css/index.css" />
-    <link rel="stylesheet" href="/src/assets/css/detail.css">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/detail.css">
   </head>
   <body>
-    <div class="navigation">
-        <div class="nav-left">
-          <img src="/src/assets/image/logo.png" alt="" />
-          <div class="link">
-            <a href="/views/index.html" class="active-link">Home</a>
-            <a href="/views/project.html">My Project</a>
-            <a href="/views/testimonial.html">Testimonial</a>
-          </div>
-        </div>
-        <div class="nav-right">
-          <a href="/views/contact.html">Contact Me</a>
-      
+      <!-- navbar -->
+    <nav style="background-color: #004643" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="/"><img
+            src="/image/logo.png"
+            style="width: 40px; height: 40px"
+            alt=""
+            srcset=""
+          /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fw-bold ms-2 active"
+                style="color: #f9bc60"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fw-bold ms-2"
+                href="/add-project"
+              >Add Project</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fw-bold ms-2"
+                href="/testimonial"
+              >Testimonial</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button
+              class="border border-0 me-4 rounded"
+              type="submit"
+              style="background-color: #f9bc60"
+            >
+              <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
+                Me</a>
+            </button>
+          </form>
         </div>
       </div>
     </nav>
+
+
+    <div class="navigation" style="background-color: #004643">       
     <!-- detail -->
     <div class="judul-detail">
         <h2>Detail Project</h2>
     </div>
     <div class="detail">
         <div class="detail-left">
-            <img src="/src/assets/image/coding.gif" alt="" srcset="">
+            <img src="/image/coding.gif" alt="" srcset="">
         </div>
         <div class="detail-right">
             <h4>Duration</h4>
@@ -51,10 +101,17 @@
             </div>
         </div>
     </div>
-    <div class="detail-p">
+    <div class="detail-p text-light pb-5">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quis iure. Assumenda quod unde facilis nemo nulla expedita dolore earum corrupti corporis, temporibus ad praesentium dolores quis, cum in nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias ipsum eaque, unde omnis natus blanditiis iste vitae corrupti labore facere quis nulla minima aperiam quia non id ab voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi deleniti quaerat soluta at ex, ad, sapiente, dicta ab sed vitae velit debitis distinctio similique autem ipsum suscipit facilis nisi. Vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et assumenda ipsa doloribus? Nostrum deserunt soluta illum atque laboriosam nam suscipit pariatur, perferendis, dignissimos dolorem unde, quia eos? Vel, optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet est veniam harum voluptas doloremque corporis earum provident, repellendus dignissimos a maiores dolores quos aut tempore obcaecati ut alias reprehenderit vero.
         </p>
     </div>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
