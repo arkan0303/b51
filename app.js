@@ -3,6 +3,7 @@ const path = require("path");
 const { title } = require("process");
 const app = express();
 const port = 5000;
+const hbs = require("hbs");
 
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
@@ -13,7 +14,11 @@ app.use(express.static("src/assets"));
 // parsing data form client
 app.use(express.urlencoded({ extended: false }));
 
-const dataDummy = [];
+hbs.registerHelper("arrayIncludes", function (array, value) {
+  return array.includes(value);
+});
+
+let dataDummy = [];
 
 // routing
 app.get("/", (req, res) => {
@@ -101,7 +106,7 @@ app.post("/add-project", (req, res) => {
   };
 
   dataDummy.unshift(data);
-  console.log(dataDummy);
+  console.log("kakakak", dataDummy);
   res.redirect("/");
 });
 
@@ -112,6 +117,7 @@ app.get("/delete/:id", (req, res) => {
   dataDummy.splice(id, 1);
   res.redirect("/");
 });
+
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
 });
@@ -121,10 +127,12 @@ app.get("/edit/:id", (req, res) => {
   const { id } = req.params;
 
   const data = dataDummy[parseInt(id)];
-  res.render("edit", { dataDummy: data });
+  console.log("inih", dataDummy[parseInt(id)]);
+  res.render("edit", { dataDummy: data, id });
 });
 // edit post
 app.post("/edit/:id", (req, res) => {
   const { id, title, startDate, endDate, Description, Tecnhologies } = req.body;
   console.log("coba", req.body);
+  res.redirect("/");
 });

@@ -84,7 +84,7 @@
       style=" background-color: #004643 ; margin-top: 1px;"
       class="p-1 mx-auto mb-0"
       method="post"
-      action="/add-project"
+      action="/edit/{{id}}"
     >
       <h3 class="text-light d-flex justify-content-center mt-3">Update My
         Project</h3>
@@ -137,22 +137,24 @@
           <label
             class="text-light"
             for="Technologies "
-          >{{dataDummy.Technologies}}</label>
+          >Technologies</label>
           <div>
             <input
               class="bg-body-secondary"
               type="checkbox"
-              name="Technologies"
-              value="Node js"
+              name="Tecnhologies"
+              value="node-js"
               id="node"
+              {{#if (arrayIncludes dataDummy.Tecnhologies 'node-js')}}checked{{/if}} 
             />
             <label class="text-light" for="node">Node Js</label>
             <input
               class="ms-3 bg-body-secondary"
               type="checkbox"
-              name="Technologies"
-              value="Golang"
+              name="Tecnhologies"
+              value="golang"
               id="golang"
+              {{#if (arrayIncludes dataDummy.Tecnhologies 'golang')}}checked{{/if}} 
             />
             <label class="text-light" for="golang">Golang</label>
           </div>
@@ -160,17 +162,19 @@
             <input
               class="bg-body-secondary"
               type="checkbox"
-              name="Technologies"
-              value="React js"
+              name="Tecnhologies"
+              value="react"
               id="react"
+              {{#if (arrayIncludes dataDummy.Tecnhologies 'react')}}checked{{/if}} 
             />
             <label class="text-light" for="react">React Js</label>
             <input
               class="ms-3 bg-body-secondary"
               type="checkbox"
-              name="Technologies"
-              value="Java"
+              name="Tecnhologies"
+              value="java"
               id="java"
+              {{#if (arrayIncludes dataDummy.Tecnhologies 'java')}}checked{{/if}} 
             />
             <label class="text-light" for="java">Java</label>
           </div>
