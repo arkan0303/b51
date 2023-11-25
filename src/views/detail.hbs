@@ -73,7 +73,7 @@
     </nav>
 
 
-    <div class="navigation" style="background-color: #004643">       
+    <div class="content-detail" style="background-color: #004643">       
     <!-- detail -->
     <div class="judul-detail">
         <h2>Detail Project</h2>
@@ -84,28 +84,25 @@
         </div>
         <div class="detail-right">
             <h4>Duration</h4>
-            <div class="duration">
-                <i class="fa-solid fa-calendar-days"><p>{{dataDummy.durasiProject}}</p></i>
+            <div class="duration" >
+                <i class="fa-solid fa-calendar-days"><p >{{dataDummy.durasiProject}}</p></i>
                 <i class="fa-solid fa-clock"><p>{{dataDummy.postAt}}</p></i>
             </div>
             <h4>Technologies</h4>
+            <div class="tecnologies">
             <div class="tecno">
-                <div class="tecno-left">
-                    <i class="fa-brands fa-golang"><p>Golang</p></i>
-                    <i class="fa-brands fa-java"><p style="margin-left: 1rem;">Java</p></i>
-                </div>              
-                <div class="tecno-right">
-                    <i class="fa-brands fa-react"><p>React</p></i>
-                    <i class="fa-brands fa-node-js"><p>Node Js</p></i>
-                </div>
+            {{#each dataDummy.Tecnhologies}}
+              <i style="font-size: 15px; display: flex; gap:1rem;" class="fa-brands fa-{{this}}"><p>{{this}}</p></i>
+            {{/each}}
+            </div>
             </div>
         </div>
     </div>
     <div class="detail-p text-light pb-5">
-        <p>
+        <p class="text-light fw-bold">
            {{dataDummy.title}}
         </p>
-        <p>
+        <p class="text-light fw-normal">
            {{dataDummy.Description}}
         </p>
     </div>
