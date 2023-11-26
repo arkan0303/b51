@@ -5,8 +5,17 @@ const app = express();
 const port = 5000;
 const hbs = require("hbs");
 
+//setup hbs
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
+hbs.registerHelper("arrayIncludes", function (array, value) {
+  return array.includes(value);
+});
+
+// connection database
+const config = require("./src/config/config.json");
+const { Sequelize, QueryTypes } = require("sequelize");
+const sequelize = new Sequelize(config.development);
 
 // set stastic file server
 app.use(express.static("src/assets"));
@@ -14,15 +23,20 @@ app.use(express.static("src/assets"));
 // parsing data form client
 app.use(express.urlencoded({ extended: false }));
 
-hbs.registerHelper("arrayIncludes", function (array, value) {
-  return array.includes(value);
-});
-
 let dataDummy = [];
 
 // routing
-app.get("/", (req, res) => {
-  res.render("index", { dataDummy });
+app.get("/", async (req, res) => {
+  try {
+    const query = `SELECT id, title, start_date, end_date, description, technologies, image, author, "createdAt", "updatedAt"
+    FROM public.projects`;
+    let obj = await sequelize.query(query, { type: QueryTypes.SELECT });
+
+    res.render("index", { dataDummy: obj });
+    console.log(obj);
+  } catch (error) {
+    console.log("catc", error);
+  }
 });
 app.get("/testimonial", (req, res) => {
   res.render("testimonial");
