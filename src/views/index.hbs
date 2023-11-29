@@ -23,7 +23,7 @@
     <!-- navbar -->
     <nav style="background-color: #004643" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="/"><img
+        <a class="navbar-brand ms-3" href="/home"><img
             src="/image/logo.png"
             style="width: 40px; height: 40px"
             alt=""
@@ -46,7 +46,7 @@
               <a
                 class="nav-link text-light fw-bold ms-2"
                 aria-current="page"
-                href="/"
+                href="/homme"
               >Home</a>
             </li>
             <li class="nav-item">
@@ -172,10 +172,10 @@
           <div class="">
             <a
               class="nav-link text-light fw-bold fs-5"
-              href="/detail-project/{{@index}}"
+              href="/detail-project/{{this.id}}"
             >{{this.title}}</a>
             <div class="text-light" style="font-size: 10px; font-weight: 200;">
-              <p>{{this.createdAt}} | {{this.author}}</p>
+              <p>{{this.createdAt}} |{{this.durasiProject}} | {{this.author}}</p>
             </div>
 
             <p class="text-light" style="text-align: justify;">
@@ -197,14 +197,14 @@
                 class="d-flex justify-content-center border-0 fw-bold"
                 style=" padding: 3px 35px; background-color: #f9bc60;"
               >
-               <a class="nav-link" href="/delete/{{@index}}">Hapus</a></button>
+               <a class="nav-link" href="/delete/{{this.id}}">Hapus</a></button>
               </button>
             </div>
             <div class="w-50">
               <button
                 class="d-flex justify-content-center border-0 fw-bold"
                 style=" padding: 3px 46px; margin-left: 2px; background-color: #f9bc60;"
-              ><a class="nav-link" href="/edit/{{@index}}">Edit</a></button>
+              ><a class="nav-link" href="/edit/{{this.id}}">Edit</a></button>
             </div>
           </div>
         </div>

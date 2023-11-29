@@ -1,24 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail Project</title>
-     <link
+    <title>Login</title>
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/register.css" />
   </head>
   <body>
-      <!-- navbar -->
+    <!-- navbar -->
     <nav style="background-color: #004643" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="/home"><img
+        <a class="navbar-brand ms-3" href="/"><img
             src="/image/logo.png"
             style="width: 40px; height: 40px"
             alt=""
@@ -39,16 +36,17 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link text-light fw-bold ms-2 active"
-                style="color: #f9bc60"
+                class="nav-link text-light fw-bold ms-2"
                 aria-current="page"
-                href="/home"
+                href="/"
               >Home</a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-light fw-bold ms-2"
+                aria-current="true"
                 href="/add-project"
+                style="color: #f9bc60"
               >Add Project</a>
             </li>
             <li class="nav-item">
@@ -58,7 +56,7 @@
               >Testimonial</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <div class="d-flex" role="search">
             <button
               class="border border-0 me-4 rounded"
               type="submit"
@@ -67,51 +65,38 @@
               <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
                 Me</a>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
 
+    <form class="p-1 mx-auto mb-0" method="post" action="/add-project">
+      <div class="container-register">
+        <h3>Login</h3>
 
-    <div class="content-detail" style="background-color: #004643">       
-    <!-- detail -->
-    <div class="judul-detail">
-        <h2>Detail Project</h2>
-    </div>
-    <div class="detail">
-        <div class="detail-left">
-            <img src="/image/coding.gif" alt="" srcset="">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
         </div>
-        <div class="detail-right">
-            <h4>Duration</h4>
-            <div class="duration" >
-                <i class="fa-solid fa-calendar-days"><p >{{dataDummy.durasiProject}}</p></i>
-                <i class="fa-solid fa-clock"><p>{{dataDummy.createdAt}}</p></i>
-            </div>
-            <h4>Technologies</h4>
-            <div class="tecnologies">
-            <div class="tecno">
-            {{#each dataDummy.technologies}}
-              <i style="font-size: 15px; display: flex; gap:1rem;" class="fa-brands fa-{{this}}"><p>{{this}}</p></i>
-            {{/each}}
-            </div>
-            </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
         </div>
-    </div>
-    <div class="detail-p text-light pb-5">
-        <p class="text-light fw-bold">
-           {{dataDummy.title}}
-        </p>
-        <p class="text-light fw-normal">
-           {{dataDummy.description}}
-        </p>
-    </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="text" id="password" name="password" />
+        </div>
 
+        <div class="btn">
+          <button> Next Login</button>
+        </div>
 
-    <script
+      </div>
+    </form>
+  </body>
+  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-  </body>
 </html>
