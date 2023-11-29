@@ -50,12 +50,14 @@
               >Home</a>
             </li>
             <li class="nav-item">
+              {{#if isLogin}}
               <a
                 class="nav-link text-light fw-bold ms-2"
                 aria-current="true"
                 href="/add-project"
                 style="color: #f9bc60"
               >Add Project</a>
+              {{/if}}
             </li>
             <li class="nav-item">
               <a
@@ -65,11 +67,18 @@
             </li>
           </ul>
           <div class="d-flex" role="search">
+            {{#if isLogin}}
+            <a class="nav-link px-2 fw-bold" style="color: #f9bc60;" href="/registrasi">Hallo , {{user}}</a>
+            <a class="nav-link px-2 fw-bold " style="color: #f9bc60;" href="/logout">Logout</a>
+            {{else}}
+            <a class="nav-link px-2 fw-bold" style="color: #f9bc60;" href="/registrasi">Registrasi</a>
+            <a class="nav-link px-2 fw-bold " style="color: #f9bc60; margin-right: 10px" href="/login">Login</a>
+            {{/if}}
             <button
               class="border border-0 me-4 rounded"
               type="submit"
               style="background-color: #f9bc60"
-            >
+            >  
               <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
                 Me</a>
             </button>
@@ -77,6 +86,7 @@
         </div>
       </div>
     </nav>
+  
     <!-- navbar end -->
     <!-- card -->
     <div style="background-color: #004643; margin-top: 1px " class="content">
@@ -187,12 +197,13 @@
               <i class="fa-brands fa-{{this}}"></i>
             {{/each}}
           </div>
-
+        {{#if this.isLogin}}
           <div
             class="d-flex justify-content-center align-items-end mt-2"
             style="width: 100%;"
-          >
+           >
             <div class="w-50">
+           
               <button
                 class="d-flex justify-content-center border-0 fw-bold"
                 style=" padding: 3px 35px; background-color: #f9bc60;"
@@ -207,6 +218,7 @@
               ><a class="nav-link" href="/edit/{{this.id}}">Edit</a></button>
             </div>
           </div>
+          {{/if}}
         </div>
       {{/each}}
     </div>

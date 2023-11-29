@@ -1,0 +1,36 @@
+form {
+  background-color: #004643;
+  margin-top: 1px;
+  height: 89%;
+  display: flex;
+}
+.container-register {
+  width: 50%;
+  margin-left: 5rem;
+  margin-top: 11rem;
+
+  height: 50%;
+}
+.container-register h1 {
+  color: #f9bc60;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container-register p {
+  color: aliceblue;
+  text-align: justify;
+}
+.container-register a {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  background-color: #f9bc60;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.image img {
+  width: 400px;
+  margin-left: 3rem;
+}

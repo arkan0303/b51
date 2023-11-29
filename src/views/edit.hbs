@@ -65,14 +65,23 @@
             </li>
           </ul>
           <div class="d-flex" role="search">
+             <div class="d-flex" role="search">
+            {{#if isLogin}}
+            <a class="nav-link px-2 fw-bold" style="color: #f9bc60;" href="/registrasi">Hallo , {{user}}</a>
+            <a class="nav-link px-2 fw-bold " style="color: #f9bc60;" href="/logout">Logout</a>
+            {{else}}
+            <a class="nav-link px-2 fw-bold" style="color: #f9bc60;" href="/registrasi">Registrasi</a>
+            <a class="nav-link px-2 fw-bold " style="color: #f9bc60; margin-right: 10px" href="/login">Login</a>
+            {{/if}}
             <button
               class="border border-0 me-4 rounded"
               type="submit"
               style="background-color: #f9bc60"
-            >
+            >  
               <a class="nav-link text-dark px-2 fw-bold" href="/contact">Contact
                 Me</a>
             </button>
+          </div>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@
             alt=""
             srcset=""
           /></a>
-        <button
+        {{! <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -66,18 +66,20 @@
                 Me</a>
             </button>
           </div>
-        </div>
+        </div> }}
       </div>
     </nav>
 
-    <form class="p-1 mx-auto mb-0" method="post" action="/add-project">
+    <form class="p-1 mx-auto mb-0" method="post" action="/login">
       <div class="container-register">
         <h3>Login</h3>
-
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-        </div>
+        <!-- flash message section -->
+        {{#if messages.danger}}
+          <div class="alert alert-danger">{{messages.danger}}</div>
+        {{/if}}
+        {{#if messages.success}}
+          <div class="alert alert-success">{{messages.success}}</div>
+        {{/if}}
         <div>
           <label for="email">Email</label>
           <input type="text" id="email" name="email" />
